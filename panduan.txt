@@ -1,0 +1,102 @@
+Halo! Berikut panduan simple untuk mengganti file-file yang diperlukan:
+
+┌─────────────────────────────────────┐
+│   FILE YANG PERLU DIGANTI           │
+└─────────────────────────────────────┘
+
+1️⃣ VIDEO
+   └── ganti file: video.mp4
+   └── format: .mp4
+
+2️⃣ MUSIK
+   └── ganti file: music.mp3  
+   └── format: .mp3
+
+3️⃣ GIF (opsional)
+   ├── halaman ready : gif/1.gif
+   └── halaman refuse: gif/2.gif
+   └── kalo gak punya GIF, bisa pake foto biasa (jpg/png) tapi rename jadi .gif
+
+┌─────────────────────────────────────┐
+│   CARA GANTI TEKS SURAT (#LETTER)   │
+└─────────────────────────────────────┘
+
+📝 Lokasi file: js/script.js
+
+🔍 Cari baris yang ada tulisan: const FULL_LETTER =
+
+✏️ Di situ ada teks panjang, contohnya:
+
+    const FULL_LETTER = `Dulu aku nggak pernah nyangka...
+    ...
+    Always yours,
+    joko anwar`;
+
+💡 Cara mengedit:
+   1. Buka file js/script.js pake Notepad atau editor apapun
+   2. Cari teks `Dulu aku nggak pernah nyangka` 
+   3. Hapus semua teks di antara tanda ` (backtick) 
+   4. Tulis teks baru sesuai keinginan
+   5. Simpan file
+
+⚠️ PENTING:
+   - Jangan hapus tanda ` (backtick) di awal dan akhir
+   - Bisa pake enter untuk baris baru
+   - Tanda kutip " boleh dipakai bebas
+   - Simpan perubahan sebelum refresh browser
+
+Contoh teks yang sudah diedit:
+    const FULL_LETTER = `Halo sayang,
+    
+    Selamat ulang tahun ya...
+    ...
+    Love you,
+    [Nama Kamu]`;
+
+┌─────────────────────────────────────┐
+│   LINK TEMPLATE CANVA                │
+└─────────────────────────────────────┘
+
+🎨 Template canva:
+https://www.canva.com/design/DAHB5bVJBLc/_BDgqqXhLDzDz8JI5D5G7A/edit?utm_content=DAHB5bVJBLc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+📝 Cara pakai template Canva:
+1. Klik link di atas
+2. Klik "Use template" atau "Gunakan template"
+3. Ganti foto-foto
+4. Edit teks 
+5. Klik "Download" → pilih "MP4 Video"
+6. Rename file hasil download jadi "video.mp4"
+
+┌─────────────────────────────────────┐
+│   STRUKTUR FOLDER (JANGAN DIUBAH)   │
+└─────────────────────────────────────┘
+
+birthday-surprise/
+├── index.html
+├── video.mp4     <── ganti ini (hasil dari Canva)
+├── music.mp3     <── ganti ini (lagu kesayangan)
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js  <── ini tempat edit teks surat
+└── gif/
+    ├── 1.gif     <── ganti ini (opsional)
+    └── 2.gif     <── ganti ini (opsional)
+
+┌─────────────────────────────────────┐
+│   TROUBLESHOOTING (KALAU ERROR)      │
+└─────────────────────────────────────┘
+
+❌ Video gak muncul
+   └── Pastikan nama file: video.mp4 (huruf kecil semua)
+   └── Pastikan formatnya .mp4 (bukan .MP4 atau .mov)
+
+❌ Musik gak bunyi
+   └── Pastikan nama file: music.mp3
+   └── Cek volume HP/komputer tidak mute
+
+❌ Teks surat gak berubah
+   └── Pastikan sudah simpan file script.js
+   └── Refresh browser (F5 atau Ctrl+R)
+   └── Jangan hapus tanda ` (backtick) di awal & akhir teks

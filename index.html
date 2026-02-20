@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Surprise</title>
+  
+  <!-- CSS External -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Halaman Ready (Page 3a) -->
+  <div class="card" id="readySection">
+    <img
+      src="gif/1.gif"
+      alt="ready"
+      class="ready-image"
+    />
+    <div class="title ready-title">
+      are you readyy to open thisss?
+    </div>
+    <div class="button-group">
+      <button
+        class="btn btn-primary"
+        onclick="showOpenItPage()"
+      >
+        yess
+      </button>
+      <button
+        class="btn btn-secondary"
+        onclick="showRefusePage()"
+      >
+        noo
+      </button>
+    </div>
+  </div>
+
+  <!-- Refuse Section (Page 3b) -->
+  <div class="card" id="refuseSection" style="display: none">
+    <img
+      src="gif/2.gif"
+      alt="angry"
+      class="ready-image"
+    />
+    <div class="title refuse-title">OH GITU SEKARANG KAMU SAMA AKU?😡</div>
+    <br />
+    <button class="btn btn-primary" onclick="backToReady()">back</button>
+  </div>
+
+  <!-- Video Player Section -->
+  <div class="viewer" id="videoSection">
+    <div class="loading" id="loading">Memuat video...</div>
+    
+    <!-- Container untuk hujan emoji -->
+    <div class="emoji-rain" id="emojiRain"></div>
+    
+    <!-- Tombol kontrol musik -->
+    <button class="music-control" id="musicToggle">♪</button>
+    
+    <!-- Zona klik dengan disabled state -->
+    <div class="tap-zone left" id="leftZone"></div>
+    <div class="tap-zone right" id="rightZone"></div>
+    
+    <div class="arrow left">←</div>
+    <div class="arrow right">→</div>
+
+    <!-- Video utama -->
+    <video
+      class="slide"
+      id="mainVideo"
+      src="video.mp4"
+      muted
+      playsinline
+    ></video>
+
+    <!-- Audio untuk background music (tersembunyi) -->
+    <audio id="backgroundMusic" loop>
+      <source src="music.mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+      Tunggu video selesai dulu...
+    </div>
+
+    <!-- Indicator cuma nunjukin segment -->
+    <div class="segment-indicator" id="indicator">
+      1/8
+    </div>
+
+    <div class="mobile-nav">
+      <button class="mobile-nav-btn" id="prev">← Prev</button>
+      <button class="mobile-nav-btn" id="next">Next →</button>
+    </div>
+  </div>
+
+  <!-- Halaman Surat (Page 8) -->
+  <div class="page" id="page8" style="display: none">
+    <div class="page-content long-content">
+      <div class="letter-title">Untuk Kamu</div>
+      <div class="letter-wrapper">
+        <div class="letter" id="letterText"></div>
+        <button class="skip-btn" id="skipBtn" onclick="skipTyping()">
+          skip
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  
+  <!-- JavaScript External -->
+  <script src="script.js"></script>
+</body>
+</html>
